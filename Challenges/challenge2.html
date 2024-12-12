@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Challenge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("div").animate({
+                    left: '+= 100px',
+                    height:'+=150'
+
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="button1">Kid</button>
+<button id="button2">Goal</button>
+<button id="button3">Ball</button>
+
+<img style="height:300px;position:absolute;" src="img/ball.jpg"/>
+<img style="height:300px;position:absolute;bottom:200px;" src="img/goal.png"/>
+<img style="height:300px;position:absolute;right:200px;" src="img/kid.jpg" alt="Kid"/>
+
+
+
+
+</body>
+</html>
