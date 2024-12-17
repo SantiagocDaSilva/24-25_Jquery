@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callbacks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").hide("slow", function(){
+                alert("Its gone!");
+            });
+
+        });
+    </script>
+</head>
+<body>
+<img id="kid" src="img/kid.jpg" style="position:absolute;right:200px;"  alt="Kid"/>
+</body>
+</html>

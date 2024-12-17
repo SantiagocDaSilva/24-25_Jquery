@@ -6,11 +6,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("#button1").click(function(){
-                $("div").animate({
-                    left: '+= 100px',
-                    height:'+=150'
 
+            $("#button1").click(function(){
+                $("img[alt='Kid']").animate({
+                    right: '+=100px',
+                    top: '+=50px'
+                });
+            });
+
+
+            $("#button2").click(function(){
+                $("img[src='img/goal.png']").animate({
+                    left: '+=100px',
+                    bottom: '+=50px'
+                });
+            });
+
+
+            $("#button3").click(function(){
+                $("img[src='img/ball.jpg']").animate({
+                    left: '+=100px',
+                    top: '+=50px'
                 });
             });
         });
@@ -23,10 +39,6 @@
 
 <img style="height:300px;position:absolute;" src="img/ball.jpg"/>
 <img style="height:300px;position:absolute;bottom:200px;" src="img/goal.png"/>
-<img style="height:300px;position:absolute;right:200px;" src="img/kid.jpg" alt="Kid"/>
-
-
-
-
+<img style="height:300px;position:absolute;right:200px;" src="../img/kid.jpg" alt="Kid"/>
 </body>
 </html>
