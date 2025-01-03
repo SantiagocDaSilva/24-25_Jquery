@@ -31,6 +31,17 @@
             $("#zip").css({"background-color": "red"});
             $("#zipE").css({"display": "block"});
           }
+          var phone_filter = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+          if(!phone_filter.test($("#phone").val())){
+            $("#phone").css({"background-color":"red"});
+            $("#phoneE").css({"display":"block"});
+
+          var email_filter =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+          if(!email_filter.test($("#email").val())){
+            $("#email").css({"background-color":"red"});
+            $("#emailE").css({"display":"block"});
+          }
+          }
         });
       });
 
@@ -118,8 +129,12 @@
   <br />
   <label for="phone">Phone</label>
   <input type="text" name="phone" id="phone"/><br />
+  <div id="phoneE" style="display:none">Please enter a valid phone number</div>
+
   <label for="email">Email</label>
   <input type="text" name="email" id="email"/><br />
+  <div id="emailE" style="display:none">Please enter a valid email address</div>
+
   <label for="dob">DOB</label>
   <input type="text" name="dob" id="dob"/><br />
   <label for="username">Username</label>
