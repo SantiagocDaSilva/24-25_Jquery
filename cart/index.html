@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="container bg-dark text-white p-5">
+        <h2>Welcome to My Jersey Store!</h2>
+        <p>The place to spend all of your money!</p>
+        </div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="jersey">
+                <img src="img/vinij.jpg" class="jersey-img-top" alt="Vinicius Junior Jersey">
+                <div class="jersey-body">
+                    <h5 class="jersey-title">Vini Jr Jersey</h5>
+                    <p class="jersey-text">Price: $99.99</p>
+                    <button class="btn btn-dark" onClick="addProduct()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+         <input type="text" name="total" id="total" value="0.00"/>
+    </div>
+</div>
+<script src="js/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
